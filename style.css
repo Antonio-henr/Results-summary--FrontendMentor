@@ -1,0 +1,207 @@
+*{
+	margin: 0px 0px;
+	padding: 0px 0px;
+	box-sizing: border-box;
+	
+}
+body{
+	height: 100%;
+	background:#d9cfff;
+	font-family:Arial;
+}
+
+.principal{
+	height: 390px;
+	width: 600px;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: flex;
+	background-color: whitesmoke;
+	border-radius: 25px;
+	box-shadow:  35px 35px 70px #ada4cc,
+             -35px -35px 70px #e9deff;
+}
+
+.bloco1{
+	height: 390px;
+	width: 50%;
+	display: inline-block;
+	background: linear-gradient(145deg, #3b00ff, #181130);
+	border-radius: 25px;
+	text-align: center;
+}
+
+.circulo{
+	height: 150px;
+	width: 150px;
+	margin: 15px auto;
+	border-radius: 50%;
+	color: white;
+	display: flex;
+  	justify-content: center;
+ 	align-items: center;
+	background: linear-gradient(145deg, #181130, #3b00ff );
+	
+}
+
+.titulo{
+	color: white;
+	margin-top: 15px;
+	font-size: 35px;
+
+}
+
+.bloco2{
+	height: 60vh;
+	width: 50%;
+	text-align: center;
+}
+
+
+
+.bloco1 h2{
+	color: white;
+	font-size: 30px;
+}
+.p1{
+	padding: 10px;
+	margin-top: 2,5px;
+	color: white;
+}
+.circulo h1{
+	font-size: 50px;
+}
+
+.bloco2 h2{
+	font-size: 37px;
+	margin-top: 10px;
+	margin-bottom: -10px;
+}
+.atributos{
+	width: 90%;
+	height: 40px;
+	margin: 20px auto;
+	background-color: red;
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+}
+
+img[alt="icon"]{
+	margin-left: 5px;
+	height: 75%;
+}
+
+.brr1{
+	background-color: rgba(250,128,114, 0.2);
+	border-radius: 10px;
+	color: rgba(250,128,114, 1);;
+
+}
+
+.brr2{
+	background-color: rgba(255, 240, 0, 0.2);
+	border-radius: 10px;
+	color: rgba(204, 204, 0, 1);
+}
+
+.brr3{
+	background-color: rgba(50,205,50, 0.2);
+	border-radius: 10px;
+	color: rgba(50,205,50, 1);
+}
+
+.brr4{
+	background-color: rgba(0, 0, 255, 0.2);
+	border-radius: 10px;
+	color: rgba(0, 0, 255, 1);
+}
+
+input[type=button]{
+	width: 90%;
+	height: 40px;
+	margin: 20px auto;
+	background: linear-gradient(145deg, #181130, #3b00ff );
+	border-radius: 50px;
+	border: 0px;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.brr_nomes{
+	width: 50%;
+	text-align: left;
+	padding-left: 10px;
+	height: auto;
+	font-size: 20px;
+}
+.atributos .pontuacao{
+	width: 48%;
+	text-align: right;
+	color: black;
+	font-weight: bold;
+	margin-right: 8px;
+}
+.atributos .fraco{
+	text-align: right;
+	padding-right: 10px;
+	color: gray;
+	width: auto;
+	font-weight: bold;
+}
+
+/*@media screen and (max-width:650px){
+
+.principal{
+	width: 100%;
+	border-radius: 0px;
+	height: 400px;
+}
+.bloco1{
+	border-radius: 0px 25px 25px 0px;
+	height: 400px;
+}
+}*/
+
+@media screen and (max-width:650px){
+	.principal{
+		display: block;
+		width: 100%;
+		height: auto;
+		padding-top: 80px;
+		box-sizing: border-box;
+		border-radius: 0px 0px 0px 0px;
+	}
+	.bloco1{
+		display: block;
+		width: 100%;
+		border-radius: 0px 0px 25px 25px;
+	}
+	.titulo{
+		padding-top: 20px;
+		margin-top: 0px;
+	}
+	.bloco2{
+		width: 100%;
+	}
+	.atributos{
+		height: 55px;
+		font-size:30px ;
+	}
+	.brr_nomes{
+		font-size: 30px;
+	}
+	.p1{
+	font-size: 20px;
+	padding: 27px;
+	}
+
+	input[type='button']{
+		font-size: 40px;
+		height: 60px;
+		margin-top: 10px;
+	}
+}
